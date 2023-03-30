@@ -1,0 +1,125 @@
+ @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+ :root{
+  --Orange: hsl(25, 97%,53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217,12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --secondary:hsl(213deg,20%,22%);
+ }
+body{
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  background-color: var(--Very-Dark-Blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden{
+  display: none;
+}
+.container{
+  background-color: var(--Dark-Blue);
+  border-radius: 1rem;
+}
+.card{
+  padding: 2rem;
+  width: 400px; 
+}
+.rating img{
+  background-color: var(--secondary);
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  margin-bottom: 1rem;
+}
+.rating h1{
+  color: var(--White);
+  margin-bottom: 1rem;
+}
+.rating p{
+  color: var(--Medium-Grey);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.nums{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.nums li{
+  list-style: none;
+  border-radius: 5rem;
+  background-color: var(--secondary);
+  color: var(--Light-Grey);
+  font-weight: 700;
+  padding: 15px 20px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.nums li:hover{
+  background-color: var(--Light-Grey);  
+  color: var(--White);
+}
+.rating button{
+  width: 100%;
+  padding: 5% 30%;
+  background-color: var(--Orange);
+  color: var(--White);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.rating button:hover{
+  background-color: var(--White);
+  color: var(--Orange)
+}
+.feedback{
+  text-align: center;
+}
+.result{
+  background-color: var(--secondary);
+  width: fit-content;
+  margin: 1rem auto;
+  color: var(--Orange);
+  padding: .5rem;
+  border-radius: 2rem;
+}
+.message h1{
+  padding-top: 1rem;
+  color: var(--White);
+}
+.message p{
+  padding-top: 10px;
+  line-height: 1.5rem;
+  color: var(--Light-Grey);
+}
+.checked{
+  background-color: var(--Orange) !important;
+  color: var(--White) !important;
+}
+
+@media screen and (max-width:768px){
+ .card{
+  max-width: 90vw;
+  padding: 1rem;
+}
+}
+
+
+
